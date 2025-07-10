@@ -1,0 +1,20 @@
+name: Greeting
+on: 
+  schedule:
+    - cron "0 5 * * *"
+  push:
+    branches:
+	  - main
+	  - features
+  workflow_dispatch
+jobs:
+  jobname:
+    runs_on: ubuntu-latest
+    steps:
+      - name: "step1"
+	    run: echo "Hello Everyone. Welcome to the Devops world"
+	  - name: "step2"
+	    run: |
+		  echo "Hello Dosto"
+		  date
+		  whoami
