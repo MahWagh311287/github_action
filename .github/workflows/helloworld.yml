@@ -1,15 +1,10 @@
-name: "My first workflow"
+name: 'greeting'
 on:
   push:
     branches:
       - 'main'
       - 'features/**'
 jobs:
-  terraformInit:    # job id
-    name: hello world
-    runs-on : Windows        # labels of runners jispe workflow run karna hai
-    steps:
-      - name: Dhondu Maharaj Rocks
-      - run: echo 'hello world'    # command dalane ne liye
-      
-      
+  name: 'hello to friends'
+  runs-on: 'Windows'
+  run: 'Hello Friends, I am Mahesh'
