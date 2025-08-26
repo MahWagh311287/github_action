@@ -7,4 +7,5 @@ on:
 jobs:
   name: 'hello to friends'
   runs-on: 'Windows'
-  run: 'Hello Friends, I am Mahesh'
+  step:
+    - run: 'Hello Friends, I am Mahesh'
