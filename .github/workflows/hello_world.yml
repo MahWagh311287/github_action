@@ -7,7 +7,7 @@ on:
 jobs:
   terraformInit:
     name: 'terraform init'
-    runs-on: ubuntu-Latest
+    runs-on: 'Windows'
     steps:
       - name: 'greeting card'
         run: echo 'hello waghmare family'
