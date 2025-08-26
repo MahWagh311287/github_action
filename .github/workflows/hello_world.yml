@@ -1,0 +1,14 @@
+name: 'Greeting'
+on:
+  push:
+    branches:
+      - 'main'
+      - 'features/**'
+jobs:
+  terraformInit:
+    name: 'terraform init'
+    runs-on: ubuntu-Latest
+    steps:
+      - name: 'greeting card'
+        run: echo 'hello waghmare family'
+    
